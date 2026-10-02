@@ -1,0 +1,1 @@
+// Mock Shopify cart integration

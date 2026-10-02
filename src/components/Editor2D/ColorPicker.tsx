@@ -1,0 +1,1 @@
+// Palette control for changing the color of the selected section
