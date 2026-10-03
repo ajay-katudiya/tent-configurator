@@ -3,8 +3,8 @@
 A high-performance, reusable product customization platform built to satisfy the technical assessment requirements. This application provides a synchronized 2D control panel and interactive 3D preview engine, built with dynamic pricing architecture and ready for seamless Shopify integration.
 
 ## 🚀 Live Demo & Repository
-*   **Live Production URL:** [Insert your Vercel deployment link here]
-*   **Repository URL:** [Insert your GitHub/GitLab link here]
+*   **Live Production URL:**  [Vercel deployment link here](https://tent-configurator-iota.vercel.app/)
+*   **Repository URL:** [GitHub/GitLab link here](https://github.com/ajay-katudiya/tent-configurator)
 
 ---
 
@@ -32,7 +32,7 @@ Instead of running separate state tracking for the 2D configuration form and the
 ### 2. Extensible Product Decoupling (Reusability)
 To ensure the configurator can easily scale to other items (e.g., custom tablecloths or custom flags), the sections are designed as dynamic data objects:
 ```typescript
-export type ProductSection = 'roof' | 'frontValance' | 'leftWall' | 'rightWall';
+export type ProductSection = 'canopyFabric' | 'pyramidCap' ;
 export type Record<ProductSection, SectionConfig>;
 ```
 Swapping the underlying 3D structure or adding options to other models requires only changing the structural configuration schema, without altering the underlying core business state machine or Shopify connectors.
@@ -52,7 +52,7 @@ When "Add to Cart" is invoked, the platform passes the final dynamic pricing det
 
 1. **Clone the project repository:**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/ajay-katudiya/tent-configurator.git
    cd tent-configurator
    ```
 
